@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+
+:root {
+    --primary-color: #10B981;
+}
+
+html, body {
+    font-family: 'Yomogi', cursive;
+    margin: 0;
+    height: 100%;
+}
+
+.txt-input {
+    font-family: 'Yomogi', cursive;
+    font-weight: bolder;
+    display: block;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+    height: 10vh;
+}
+
+.btn-submit {
+    font-family: 'Yomogi', cursive;
+    font-weight: bolder;
+    font-size: medium;
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: var(--primary-color);
+    border-width: 0px;
+    border-radius: 0.5rem 0.5rem;
+    color: white;
+}
+
+.static-txt {
+    font-style: italic;
+    font-weight: bold;
+    color: grey;
+    font-size: large;
+    margin: 1rem;
+}
+
+.output-txt {
+    font-family: 'Yomogi', cursive;
+    font-weight: bolder;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 1rem;
+    padding: 1rem;
+    width: 80%;
+    height: 10vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    border-radius: 0rem 0rem 0rem 2rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 0rem 2rem 0rem 0rem;
+}
+
+
