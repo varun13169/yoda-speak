@@ -4,7 +4,8 @@
     --primary-color: #10B981;
 }
 
-html, body {
+html,
+body {
     font-family: 'Yomogi', cursive;
     margin: 0;
     height: 100%;
@@ -55,7 +56,7 @@ html, body {
     height: 10vh;
 }
 
-header {
+nav {
     background-color: var(--primary-color);
     padding: 2rem;
     text-align: center;
@@ -69,6 +70,17 @@ footer {
     text-align: center;
     color: white;
     border-radius: 0rem 2rem 0rem 0rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
 }
 
+footer div {
+    font-weight: bold;
+    font-size: large;
+}
 
+footer p {
+    font-weight: bold;
+}

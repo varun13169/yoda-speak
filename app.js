@@ -1,5 +1,5 @@
 var btnSubmit = document.querySelector("#btn-submit");
-var txtInput  = document.querySelector("#txt-input");
+var txtInput = document.querySelector("#txt-input");
 var txtOutput = document.querySelector("#output-txt");
 var baseUrl = "https://api.funtranslations.com/translate/yoda.json?text="
 
@@ -10,12 +10,12 @@ function getTranslation(inpText) {
     var url = baseUrl + inpText;
 
     return fetch(url)
-    .then((res) => {
-        return res.json()
-    })
-    .then((json) => {
-        return json;
-    });
+        .then((res) => {
+            return res.json()
+        })
+        .then((json) => {
+            return json;
+        });
 }
 
 function onChangeHandler(e) {
@@ -25,13 +25,13 @@ function onChangeHandler(e) {
 function onClickHandler() {
 
     getTranslation(txtInput.value)
-    .then((res) => {
-        txtOutput.innerText = res.contents.translated;
-    })
-    .catch((err) => {
-        console.log(err);
-        alert("Something wrong with server, try again after sometime!");
-    });
+        .then((res) => {
+            txtOutput.innerText = res.contents.translated;
+        })
+        .catch((err) => {
+            console.log(err);
+            alert("Something wrong with server, try again after sometime!");
+        });
 }
 
 // "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json?text="
